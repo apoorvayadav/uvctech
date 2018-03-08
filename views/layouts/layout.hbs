@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <title> {{title}}</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/stylesheets/scrolling-nav.css" rel="stylesheet">
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top text-white" id="mainNav"  style="background-color: #4791cd;">
+          <div class="container">
+            <div class="navbar header">
+            <a class="navbar-brand js-scroll-trigger hidden-lg" href="./"><img src="/images/logos/transparent-header.png" alt="UVC Logo" no-repeat></a>
+            <button  class= "linebar navbar-toggler hidden-sm" data-toggle="collapse" data-target="#navbarResponsive">
+              &#9776;
+            </button>
+          </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="aboutuvc">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="contactuvc">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="video">Video</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link js-scroll-trigger" href="teaminfo">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="https://www.facebook.com/uvctech/">
+                    <img src="/images/logos/facebook.png" alt="facebook" no-repeat></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="https://www.instagram.com/uvctechnology/?hl=en">
+                    <img src="/images/logos/instagram.png" alt="instagram" no-repeat></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="">
+                    <img src="/images/logos/indie.png" alt="indiegogo" no-repeat></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="https://uvctechsocial.slack.com">
+                    <img src="/images/logos/Untitled-1.png" alt="slack" no-repeat></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </nav>
+  </nav>
+
+<div class= "container-fluid">
+  <div class="mobilebody">
+      {{{body}}}
+    </div>
+  </div>
+
+
+    <!-- Footer -->
+    <footer class="footer text-center" style="background-color: #4791cd;">
+      <div class="container">
+        <span class="text-white ">UVC TECH 2018</span>
+      </div>
+    </footer>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAhJTGa2GClm0eqHVO_wzp1F2YtL9M-RBQ",
+    authDomain: "uvc-tech.firebaseapp.com",
+    databaseURL: "https://uvc-tech.firebaseio.com",
+    projectId: "uvc-tech",
+    storageBucket: "uvc-tech.appspot.com",
+    messagingSenderId: "396356921534"
+  };
+  firebase.initializeApp(config);
+</script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+    <!-- /.container -->
+
+</html>
