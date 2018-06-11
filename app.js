@@ -7,6 +7,7 @@ var cookieParser = require('cookie-parser');
 var flash = require('connect-flash');
 var routes = require('./routes/index'); //setting route
 var path = require('path'); //for connecting folders
+var nodemailer = require('nodemailer');
 var bodyParser = require('body-parser');
 var app = express();
 
@@ -21,7 +22,7 @@ app.engine('hbs', expressHbs({extname: 'hbs',defaultLayout: 'layout'}));
 app.set('view engine', 'hbs');
 //body parser middleware
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(session({
   secret:'mysupersecret',
@@ -36,6 +37,6 @@ app.use(express.static(path.join(__dirname,'views')));
 //set routes folder
 app.use('/', routes);
 
-app.listen(80,function(req,res){
+app.listen(2000,function(req,res){
   console.log('Server is running');
 });

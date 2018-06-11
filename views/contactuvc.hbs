@@ -9,11 +9,43 @@
     gtag('config', 'UA-111383023-1');
   </script>
 </head>
-<div class="row text-center">
+  <h1 class="text-center maintext">{{title}}</h1>
+
+  {{msg}}
+      <form method="POST" action="send" style=" padding: 0 0 0 25%;">
+        <div class="form-group row" >
+          <div class="col-lg-4 ">
+          <label >Name:</label>
+          <input type="text" class="form-control" name="name" >
+
+          <label >Company:</label>
+          <input type="text" class="form-control" name="company" >
+
+          <label>Email:</label>
+          <input type="text" class="form-control" name="email">
+        </div>
+
+        <div class="col-lg-4 ">
+          <label >Subject:</label>
+          <input type="text" class="form-control" name ="subject">
+
+          <label >Message:</label>
+          <textarea style=" height:50%;border: 2px solid #4791cd;border-radius: 4px;" placeholder="Write something.." type="text" name="message" class="form-control"></textarea>
+          <br>
+          <input type="submit" value="Submit" style="background-color: #4791cd; width:25%; ">
+        </div>
+<br>
+      <!--  <div class="col-sm-4 ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1448.5609251347107!2d-80.45094434181023!3d43.437171044782346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b8b2c2c1c2865%3A0x5abb6f1bbb32acf6!2sKitchener%2C+ON+N2A+1E1!5e0!3m2!1sen!2sca!4v1528568844078"
+          width="450" height="450" frameborder="0" style="border:0" class="form-control"></iframe>
+        </div> -->
+      </div>
+</form>
+  <h1 class="text-center maintext" style="padding:3% 0 0 0">The Team</h1>
+<div class="row text-center" >
   <div class="col-md-4 offset-md-2">
     <div class="card">
       <div class="col-md-6 offset-md-3">
-        <img src="/images/team-uvc/anthony.jpg" class="img-centered" alt="Anthony" style="width:100%">
       </div>
       <div class="container">
         <h2>Anthony Baldasaro</h2>
@@ -22,24 +54,121 @@
           <br>
           Pre-Health Sciences
           <br>
-          anthonybaldasaro@uvctech.ca</p>
+          <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+            anthonybaldasaro@uvctech.ca</a>
+          </p>
       </div>
     </div>
   </div>
   <div class="col-md-4 ">
     <div class="card">
       <div class="col-md-6 offset-md-3">
-        <img src="/images/team-uvc/apoorva.jpg" class="img-centered" alt="Apoorva" style="width:100%">
       </div>
       <div class="container">
         <h2>Apoorva Yadav</h2>
-        <p class="maintext">CTO,CEO &amp; Co-Founder</p>
+        <p class="maintext">CTO &amp; Co-Founder</p>
         <p>IT Support Services
           <br>
           Mechanical Engineering
           <br>
-          apoorvayadav@uvctech.ca</p>
+          <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+            apoorvayadav@uvctech.ca</a>
+        </p>
       </div>
+    </div>
+  </div>
+</div>
+<div class="row text-center" style= "padding:3% 0 3% 0;">
+<div class="col-md-4 offset-md-2">
+    <div class="card">
+      <div class="col-md-6 offset-md-3">
+      </div>
+      <div class="container">
+        <h2>Anjelica Howard</h2>
+        <p class="maintext">Marketing and Advertising</p>
+        <p>Physio Therapy
+          <br>
+          <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+            anjelicahoward@uvctech.ca</a>
+          </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 ">
+    <div class="card">
+      <div class="col-md-6 offset-md-3">
+      </div>
+      <div class="container">
+        <h2>Justin Hsu</h2>
+        <p class="maintext">Operations Manager</p>
+        <p>Marketing and Advertising Communications
+        <br>
+        <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+          justinhsu@uvctech.ca</a>
+           </p>
+      </div>
+    </div>
+  </div>
+</div>
+  <h2 class="text-center maintext font-weight-bold" style="padding-bottom:3%">Advisors </h2>
+<div class="row text-center" >
+  <div class="col-md-4 offset-md-2">
+    <div class="card">
+      <div class="col-md-6 offset-md-3">
+      </div>
+      <div class="container"  >
+        <h2>Mary McCullum Baldasaro</h2>
+        <p class="maintext">Operations Advisor</p>
+        <p>Walden University M.D, B.A,
+          <br>
+          Western University Ed.D
+          <br>
+          </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4" style="padding-bottom:3%" >
+    <div class="card" >
+      <div class="col-md-6 offset-md-3">
+      </div>
+      <div class="container" >
+        <h2>Pat Suriano</h2>
+        <p class="maintext">Advertising Advisor</p>
+        <p>Professor of Advertising and Design
+          <br>
+        University of Waterloo BFA
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row text-center" >
+<div class="col-md-4 offset-md-2">
+  <div class="card">
+    <div class="col-md-6 offset-md-3">
+    </div>
+    <div class="container"  >
+      <h2>Rachel VanHorsighn</h2>
+      <p class="maintext">Business Advisor</p>
+      <p>Pre Health Sciences
+        <br>
+        Environmental and Public Health
+        <br>
+        </p>
+    </div>
+  </div>
+</div>
+<div class="col-md-4" style="padding-bottom:8%" >
+  <div class="card" >
+    <div class="col-md-6 offset-md-3">
+    </div>
+    <div class="container" >
+      <h2>Brian Ferguson</h2>
+      <p class="maintext">Product Design</p>
+      <p>Mechanical Engineering
+        <br>
+      Computer Programing
+      </p>
     </div>
   </div>
 </div>

@@ -25,6 +25,7 @@
     "hbs": "^4.0.1",
     "mailchimp": "^1.2.0",
     "mongoose": "^4.13.6",
+    "nodemailer": "^4.6.5",
     "superagent": "^3.8.1"
   }
 }
